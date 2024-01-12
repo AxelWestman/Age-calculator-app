@@ -22,6 +22,7 @@
 
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -31,7 +32,6 @@ body{
 .container{
     background-color: var(--White);
     width: 420px;
-    max-width: 80%;
     padding: 30px;
     position: relative;
     border-bottom-right-radius: 150px;
@@ -66,9 +66,7 @@ small{
     align-items: center;
     border: none;
     border-radius: 50%;
-    position:absolute;
-    right: 30px;
-    top: 60px;
+    margin-left: 20px;
     cursor: pointer;
 }
 
@@ -80,6 +78,7 @@ small{
     font-size: 2.75rem;
     color: var(--Purple);
     font-style:italic;
+    padding-right: 10px;
 }
 
 .input-container{
@@ -93,4 +92,8 @@ small{
     display: flex;
     margin-bottom: 20px;
     border-bottom: 2px solid var(--Off-white);
+}
+
+.attribution{
+    margin-top: 20px;
 }
